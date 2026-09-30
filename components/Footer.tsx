@@ -5,23 +5,23 @@ import { IMAGENS, LINKS_SOCIAIS, ENDERECO } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-jps-main text-white pt-24 pb-12 border-t-8 border-jps-gold/20">
+    <footer className="bg-jps-main text-white pt-16 pb-10 border-t-8 border-jps-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-14">
           {/* Brand Col */}
           <div className="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left">
             <Link to="/" className="mb-8 inline-block">
               <img
-                src={IMAGENS.LOGO}
+                src={IMAGENS.LOGO_SVG_BRANCA}
                 alt="JPS Auto Peças Logo Footer"
-                className="h-20 w-auto object-contain brightness-0 invert opacity-100"
-                width="200"
+                className="h-20 w-auto max-w-full object-contain"
+                width="364"
                 height="80"
                 loading="lazy"
               />
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8">
+            <p className="text-gray-300 text-sm leading-relaxed mb-8">
               Referência na venda de peças para linha diesel há mais de 25 anos. Qualidade, estoque completo e preço justo para você e sua frota.
             </p>
             <div className="flex space-x-4">
@@ -36,8 +36,8 @@ const Footer: React.FC = () => {
 
           {/* Links Col */}
           <nav aria-labelledby="footer-links-title" className="text-center lg:text-left">
-            <h3 id="footer-links-title" className="font-anton text-xl mb-8 text-white uppercase tracking-widest border-b border-white/10 pb-4">Navegação</h3>
-            <ul className="space-y-4 text-sm text-gray-400 font-bold uppercase tracking-wider">
+            <h3 id="footer-links-title" className="font-anton text-lg mb-6 text-white uppercase tracking-wider border-b border-white/10 pb-3">Navegação</h3>
+            <ul className="space-y-4 text-sm text-gray-300 font-bold uppercase tracking-wider">
               <li><Link to="/" className="hover:text-jps-gold transition-colors">Início</Link></li>
               <li><Link to="/catalogo" className="hover:text-jps-gold transition-colors">Catálogo Digital</Link></li>
               <li><Link to="/servicos" className="hover:text-jps-gold transition-colors">Serviços Técnicos</Link></li>
@@ -48,8 +48,8 @@ const Footer: React.FC = () => {
 
           {/* Location Col */}
           <section aria-labelledby="footer-address-title" className="text-center lg:text-left">
-            <h3 id="footer-address-title" className="font-anton text-xl mb-8 text-white uppercase tracking-widest border-b border-white/10 pb-4">Onde Estamos</h3>
-            <div className="flex flex-col items-center lg:items-start gap-6 text-sm text-gray-400">
+            <h3 id="footer-address-title" className="font-anton text-lg mb-6 text-white uppercase tracking-wider border-b border-white/10 pb-3">Onde Estamos</h3>
+            <div className="flex flex-col items-center lg:items-start gap-6 text-sm text-gray-300">
               <div className="flex items-start gap-3">
                 <MapPin size={24} className="text-jps-gold flex-shrink-0" />
                 <span className="leading-relaxed">{ENDERECO}</span>
@@ -63,8 +63,8 @@ const Footer: React.FC = () => {
 
           {/* Hours Col */}
           <section aria-labelledby="footer-hours-title" className="text-center lg:text-left">
-            <h3 id="footer-hours-title" className="font-anton text-xl mb-8 text-white uppercase tracking-widest border-b border-white/10 pb-4">Horários</h3>
-            <div className="space-y-4 text-sm text-gray-400 font-medium">
+            <h3 id="footer-hours-title" className="font-anton text-lg mb-6 text-white uppercase tracking-wider border-b border-white/10 pb-3">Horários</h3>
+            <div className="space-y-4 text-sm text-gray-300 font-medium">
               <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Clock size={20} className="text-jps-gold flex-shrink-0" />
                 <div>
@@ -90,9 +90,9 @@ const Footer: React.FC = () => {
           </section>
         </div>
 
-        <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 font-bold uppercase tracking-[0.2em]">
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-bold uppercase tracking-[0.2em]">
           <p>&copy; {new Date().getFullYear()} JPS Auto Peças &bull; Peças Diesel de Alta Performance</p>
-          <div className="mt-4 md:mt-0 opacity-40 hover:opacity-100 transition-opacity flex items-center gap-2">
+          <div className="mt-4 md:mt-0 opacity-70 hover:opacity-100 transition-opacity flex items-center gap-2">
             DESIGN & DEV BY <span className="text-white lowercase">valetechsoluções</span>
           </div>
         </div>

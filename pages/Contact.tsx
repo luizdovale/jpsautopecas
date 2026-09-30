@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-jps-main to-transparent"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="font-anton text-5xl md:text-7xl mb-6 uppercase tracking-tight animate-fade-in-up">Canais de Atendimento</h1>
+          <h1 className="title-page mb-6 animate-fade-in-up">Canais de Atendimento</h1>
           <p className="text-gray-200 max-w-2xl mx-auto text-lg font-light tracking-wide animate-fade-in-up-delay-1">
             Suporte técnico especializado para sua frota diesel.
           </p>
@@ -62,10 +62,10 @@ const Contact: React.FC = () => {
 
             {/* Info Side */}
             <div className="lg:col-span-5 space-y-8 reveal">
-              <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-jps-main/5 border border-white relative overflow-hidden">
+              <div className="bg-white p-10 rounded-3xl shadow-2xl shadow-jps-main/5 border border-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-jps-gold/5 rounded-full blur-3xl"></div>
 
-                <h3 className="font-anton text-3xl text-jps-main mb-10 uppercase tracking-tight">Onde nos encontrar</h3>
+                <h3 className="title-section text-jps-main mb-8">Onde nos encontrar</h3>
 
                 <div className="space-y-10">
                   <div className="flex items-start gap-6 group">
@@ -106,9 +106,9 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Social CTA */}
-              <div className="bg-jps-gold p-10 rounded-[2.5rem] shadow-2xl shadow-jps-gold/20 flex items-center justify-between group cursor-pointer hover:scale-[1.02] transition-transform">
+              <div className="bg-jps-gold p-10 rounded-3xl shadow-2xl shadow-jps-gold/20 flex items-center justify-between group cursor-pointer hover:scale-[1.02] transition-transform">
                 <div>
-                  <h4 className="font-anton text-2xl text-jps-main uppercase">Redes Sociais</h4>
+                  <h4 className="title-card text-jps-main">Redes Sociais</h4>
                   <p className="text-jps-main/60 text-sm font-bold uppercase tracking-widest">Siga nossa loja</p>
                 </div>
                 <div className="bg-white/20 p-4 rounded-full group-hover:bg-white transition-colors">
@@ -120,9 +120,9 @@ const Contact: React.FC = () => {
 
             {/* Form Side */}
             <div className="lg:col-span-7 reveal">
-              <div className="bg-white p-10 md:p-16 rounded-[2.5rem] shadow-2xl shadow-jps-main/5 border border-white">
+              <div className="bg-white p-10 md:p-16 rounded-3xl shadow-2xl shadow-jps-main/5 border border-white">
                 <header className="mb-12">
-                  <h2 className="font-anton text-4xl text-jps-black mb-4 uppercase leading-none">Solicite um Orçamento</h2>
+                  <h2 className="title-section text-jps-black mb-4">Solicite um Orçamento</h2>
                   <p className="text-gray-500 font-light text-lg">Preencha os campos abaixo e entraremos em contato imediatamente.</p>
                 </header>
 
@@ -164,7 +164,7 @@ const Contact: React.FC = () => {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-8 py-6 bg-jps-gray border-2 border-transparent rounded-[2.5rem] focus:outline-none focus:border-jps-gold focus:bg-white transition-all text-jps-main font-medium placeholder:text-gray-300 resize-none"
+                      className="w-full px-8 py-6 bg-jps-gray border-2 border-transparent rounded-3xl focus:outline-none focus:border-jps-gold focus:bg-white transition-all text-jps-main font-medium placeholder:text-gray-300 resize-none"
                       placeholder="Descreva aqui o que você precisa..."
                     ></textarea>
                   </div>
@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
 
           {/* Map Section */}
           <section className="mt-24 reveal">
-            <div className="bg-white p-4 rounded-[3rem] shadow-2xl border border-white h-[550px] relative">
+            <div className="bg-white p-4 rounded-3xl shadow-2xl border border-white h-[550px] relative">
               <div className="absolute top-8 left-8 z-20 bg-jps-main text-white px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl">
                 Visite nossa unidade física
               </div>

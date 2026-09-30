@@ -11,7 +11,7 @@ const FloatingWhatsApp: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-50 group">
       <button
         onClick={handleClick}
-        className="bg-jps-whatsapp hover:bg-green-600 text-white p-4 rounded-full shadow-[0_4px_14px_rgba(0,0,0,0.25)] transition-all duration-300 transform hover:scale-110 flex items-center justify-center relative overflow-hidden"
+        className="bg-jps-whatsapp hover:bg-[#1ebe5b] text-white p-4 rounded-full wa-pulse shadow-[0_4px_14px_rgba(0,0,0,0.25)] transition-all duration-300 transform hover:scale-110 flex items-center justify-center relative overflow-hidden"
         aria-label="Falar no WhatsApp"
       >
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>

@@ -36,7 +36,7 @@ const About: React.FC = () => {
           <img src={IMAGENS.FUNDO_HERO} className="w-full h-full object-cover grayscale" alt="" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="font-anton text-5xl md:text-7xl mb-6 uppercase tracking-tighter animate-fade-in-up">Nossa Trajetória</h1>
+          <h1 className="title-page mb-6er animate-fade-in-up">Nossa Trajetória</h1>
           <p className="text-gray-200 max-w-2xl mx-auto text-lg font-light tracking-wide animate-fade-in-up-delay-1">
             Referência em distribuição de peças no Litoral Norte há mais de 25 anos.
           </p>
@@ -49,7 +49,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
             <article className="reveal">
               <span className="text-jps-gold font-black uppercase tracking-[0.3em] text-xs mb-4 block">Desde 1999</span>
-              <h2 className="font-anton text-4xl md:text-5xl text-jps-black mb-8 uppercase leading-none">Tradição que move o Litoral</h2>
+              <h2 className="title-section text-jps-black mb-6">Tradição que move o Litoral</h2>
               <div className="prose prose-lg text-gray-500 font-light leading-relaxed">
                 <p className="mb-6">
                   A <strong className="text-jps-main font-bold">JPS Auto Peças</strong> não é apenas uma loja; é o resultado de mais de duas décadas de dedicação ao transportador e ao frotista.
@@ -103,16 +103,16 @@ const About: React.FC = () => {
                 <div className="w-16 h-16 bg-jps-gray rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-jps-gold transition-colors duration-500">
                   <stat.icon className="text-jps-main group-hover:text-white transition-colors" size={28} />
                 </div>
-                <div className="font-anton text-3xl text-jps-main mb-1 uppercase tracking-tighter">{stat.label}</div>
+                <div className="font-anton text-2xl text-jps-main mb-1 uppercase tracking-wide">{stat.label}</div>
                 <div className="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em]">{stat.desc}</div>
               </div>
             ))}
           </div>
 
-          <div className="reveal bg-jps-main rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl shadow-jps-main/20">
+          <div className="reveal bg-jps-main rounded-3xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl shadow-jps-main/20">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
             <div className="relative z-10">
-              <h3 className="font-anton text-4xl text-white mb-6 uppercase">Pronto para rodar com confiança?</h3>
+              <h3 className="title-cta text-white mb-6">Pronto para rodar com confiança?</h3>
               <p className="text-gray-300 mb-10 max-w-xl mx-auto font-light text-lg">Nossos especialistas estão prontos para encontrar a solução exata para o seu motor diesel.</p>
               <button
                 onClick={handleWhatsApp}

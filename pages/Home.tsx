@@ -59,7 +59,7 @@ const Home: React.FC = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative h-[700px] flex items-center overflow-hidden">
+      <section className="relative min-h-[560px] md:min-h-[640px] py-20 flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src={IMAGENS.FUNDO_HERO}
@@ -75,18 +75,18 @@ const Home: React.FC = () => {
             <div className="animate-fade-in-up inline-flex items-center gap-2 bg-jps-gold text-jps-main font-black px-4 py-1.5 text-sm rounded shadow-lg mb-8 uppercase tracking-wider">
               <Star size={14} fill="currentColor" /> Desde 1992
             </div>
-            <h1 className="animate-fade-in-up-delay-1 text-5xl md:text-8xl font-anton uppercase tracking-tight leading-[1.1] mb-6 drop-shadow-2xl">
+            <h1 className="animate-fade-in-up-delay-1 title-hero mb-6 drop-shadow-2xl">
               Peças de <span className="text-jps-gold">Alta Performance</span> Para Linha Diesel
             </h1>
-            <p className="animate-fade-in-up-delay-2 text-xl text-gray-100 mb-10 font-light border-l-4 border-jps-gold pl-6 max-w-2xl leading-relaxed">
+            <p className="animate-fade-in-up-delay-2 text-base md:text-lg text-gray-100 mb-10 font-light border-l-4 border-jps-gold pl-6 max-w-2xl leading-relaxed">
               Há mais de 25 anos fornecendo a maior variedade de peças com excelência para toda a linha diesel em toda a região. Sua frota não pode parar.
             </p>
 
             <div className="animate-fade-in-up-delay-2 flex flex-col sm:flex-row gap-4">
-              <Link to="/catalogo" className="bg-jps-gold text-jps-main font-black text-lg py-4 px-10 rounded-xl hover:bg-white transition-all shadow-xl hover:shadow-jps-gold/30 transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
+              <Link to="/catalogo" className="bg-jps-gold text-jps-main font-black text-base py-4 px-8 rounded-xl hover:bg-white transition-all shadow-xl hover:shadow-jps-gold/30 transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
                 Explorar Catálogo <ArrowRight size={20} />
               </Link>
-              <Link to="/contato" className="backdrop-blur-md bg-white/10 border-2 border-white/20 text-white font-bold text-lg py-4 px-10 rounded-xl hover:bg-white hover:text-jps-main transition-all text-center">
+              <Link to="/contato" className="backdrop-blur-md bg-white/10 border-2 border-white/20 text-white font-bold text-base py-4 px-8 rounded-xl hover:bg-white hover:text-jps-main transition-all text-center">
                 Atendimento Técnico
               </Link>
             </div>
@@ -98,31 +98,31 @@ const Home: React.FC = () => {
       <section className="py-24 bg-white relative z-20 reveal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="font-anton text-4xl md:text-5xl text-jps-black mb-4 uppercase">Por que escolher a JPS?</h2>
-            <p className="text-gray-500 text-lg">Tradição, estoque completo e o melhor custo-benefício para sua frota diesel.</p>
+            <h2 className="title-section text-jps-black mb-4">Por que escolher a JPS?</h2>
+            <p className="text-gray-500 text-base md:text-lg">Tradição, estoque completo e o melhor custo-benefício para sua frota diesel.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <article className="group bg-jps-gray hover:bg-white p-10 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
+            <article className="group bg-jps-gray hover:bg-white p-8 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
               <div className="bg-white group-hover:bg-jps-main p-5 rounded-2xl w-fit mb-8 text-jps-main group-hover:text-jps-gold transition-all duration-500 shadow-sm">
                 <Truck size={40} strokeWidth={1.5} />
               </div>
-              <h3 className="font-anton text-2xl text-jps-main mb-4">Especialidade Diesel</h3>
-              <p className="text-gray-500 leading-relaxed text-lg">Foco total em peças pesadas para caminhões, bicos injetores e sistemas complexos.</p>
+              <h3 className="title-card text-jps-main mb-3">Especialidade Diesel</h3>
+              <p className="text-gray-500 leading-relaxed">Foco total em peças pesadas para caminhões, bicos injetores e sistemas complexos.</p>
             </article>
-            <article className="group bg-jps-gray hover:bg-white p-10 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
+            <article className="group bg-jps-gray hover:bg-white p-8 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
               <div className="bg-white group-hover:bg-jps-main p-5 rounded-2xl w-fit mb-8 text-jps-main group-hover:text-jps-gold transition-all duration-500 shadow-sm">
                 <Settings size={40} strokeWidth={1.5} />
               </div>
-              <h3 className="font-anton text-2xl text-jps-main mb-4">Eficiência no Estoque</h3>
-              <p className="text-gray-500 leading-relaxed text-lg">Pronta entrega para os bicos, bombas e filtros das principais marcas do mercado.</p>
+              <h3 className="title-card text-jps-main mb-3">Eficiência no Estoque</h3>
+              <p className="text-gray-500 leading-relaxed">Pronta entrega para os bicos, bombas e filtros das principais marcas do mercado.</p>
             </article>
-            <article className="group bg-jps-gray hover:bg-white p-10 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
+            <article className="group bg-jps-gray hover:bg-white p-8 rounded-3xl transition-all duration-500 border border-transparent hover:border-gray-100 hover:shadow-2xl hover:-translate-y-2">
               <div className="bg-white group-hover:bg-jps-main p-5 rounded-2xl w-fit mb-8 text-jps-main group-hover:text-jps-gold transition-all duration-500 shadow-sm">
                 <ShieldCheck size={40} strokeWidth={1.5} />
               </div>
-              <h3 className="font-anton text-2xl text-jps-main mb-4">Garantia Total</h3>
-              <p className="text-gray-500 leading-relaxed text-lg">Trabalhamos apenas com o que há de melhor no setor, garantindo a sua tranquilidade.</p>
+              <h3 className="title-card text-jps-main mb-3">Garantia Total</h3>
+              <p className="text-gray-500 leading-relaxed">Trabalhamos apenas com o que há de melhor no setor, garantindo a sua tranquilidade.</p>
             </article>
           </div>
         </div>
@@ -133,8 +133,8 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="flex flex-col md:flex-row justify-between items-end mb-16">
             <div>
-              <span className="text-jps-light font-bold tracking-[0.2em] text-sm uppercase">Excelência Diesel</span>
-              <h2 className="font-anton text-4xl md:text-5xl text-jps-main mt-2 uppercase">Nossas Especialidades</h2>
+              <span className="eyebrow text-jps-light">Excelência Diesel</span>
+              <h2 className="title-section text-jps-main mt-2">Nossas Especialidades</h2>
             </div>
             <Link to="/catalogo" className="text-jps-main font-bold flex items-center gap-2 hover:text-jps-light transition-colors mt-6 md:mt-0 group">
               Explorar todo o estoque <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
                   <div className="text-jps-gold mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                     {getIcon(line.icon)}
                   </div>
-                  <h3 className="font-anton text-3xl text-white mb-2">{line.title}</h3>
+                  <h3 className="title-card text-white mb-2">{line.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                     {line.description}
                   </p>
@@ -174,10 +174,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <header className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div>
-              <span className="text-jps-gold font-bold tracking-[0.3em] text-sm uppercase flex items-center gap-3">
+              <span className="eyebrow text-jps-gold flex items-center gap-3">
                 <div className="w-10 h-0.5 bg-jps-gold"></div> Ofertas Premium
               </span>
-              <h2 className="font-anton text-5xl md:text-6xl text-white mt-4 uppercase tracking-tight">Destaques do Mês</h2>
+              <h2 className="title-section text-white mt-4">Destaques do Mês</h2>
             </div>
             <Link to="/catalogo" className="group flex items-center gap-3 text-white font-bold border border-white/10 bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full hover:bg-white hover:text-jps-black transition-all">
               Ver Catálogo Completo <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -204,21 +204,21 @@ const Home: React.FC = () => {
             />
             <div className="absolute inset-0 bg-jps-main/20 mix-blend-multiply transition-opacity group-hover:opacity-0"></div>
           </div>
-          <article className="bg-jps-gray p-12 lg:p-24 flex flex-col justify-center">
-            <span className="text-jps-light font-bold tracking-[0.2em] text-sm uppercase mb-6">Nossa História</span>
-            <h2 className="font-anton text-5xl md:text-6xl mb-8 leading-[1.1] text-jps-main uppercase">
+          <article className="bg-jps-gray p-8 md:p-16 lg:p-20 flex flex-col justify-center">
+            <span className="eyebrow text-jps-light mb-6">Nossa História</span>
+            <h2 className="title-section mb-8 text-jps-main">
               Tradição que <br /><span className="text-jps-gold">Move Cargas</span>
             </h2>
-            <p className="text-gray-600 mb-10 text-xl leading-relaxed font-light">
+            <p className="text-gray-600 mb-10 text-lg leading-relaxed">
               Nossa história começou há mais de duas décadas em Caraguatatuba. Hoje, somos a maior referência regional em peças diesel, unindo tecnologia de ponta com o atendimento que você já conhece.
             </p>
-            <div className="grid grid-cols-2 gap-10 mb-12">
+            <div className="grid grid-cols-2 gap-8 mb-10">
               <div>
-                <h4 className="font-anton text-5xl text-jps-black mb-1">25+</h4>
+                <h4 className="font-anton text-4xl text-jps-black mb-1">25+</h4>
                 <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Anos de Mercado</p>
               </div>
               <div>
-                <h4 className="font-anton text-5xl text-jps-black mb-1">5k+</h4>
+                <h4 className="font-anton text-4xl text-jps-black mb-1">5k+</h4>
                 <p className="text-sm font-bold text-gray-400 uppercase tracking-widest">Peças em Estoque</p>
               </div>
             </div>
@@ -234,8 +234,8 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="flex justify-between items-end mb-20">
             <div>
-              <span className="text-jps-light font-bold tracking-[0.2em] text-sm uppercase">Depoimentos</span>
-              <h2 className="font-anton text-4xl md:text-5xl text-jps-black mt-2 uppercase">Voz do Cliente</h2>
+              <span className="eyebrow text-jps-light">Depoimentos</span>
+              <h2 className="title-section text-jps-black mt-2">Voz do Cliente</h2>
             </div>
             <div className="flex gap-4">
               <button
@@ -263,7 +263,7 @@ const Home: React.FC = () => {
               {DEPOIMENTOS.map(testimonial => (
                 <div
                   key={testimonial.id}
-                  className="flex-none w-[85vw] md:w-[480px] snap-center bg-white p-8 md:p-12 rounded-[2.5rem] border border-gray-100 shadow-xl shadow-gray-200/20 flex flex-col h-[420px] md:h-[450px] relative overflow-hidden group/card hover:border-jps-gold/30 transition-all duration-500"
+                  className="flex-none w-[85vw] md:w-[480px] snap-center bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/20 flex flex-col min-h-[340px] relative overflow-hidden group/card hover:border-jps-gold/30 transition-all duration-500"
                 >
                   {/* Decorative background element */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-jps-gold/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover/card:bg-jps-gold/10 transition-colors duration-500"></div>
@@ -280,7 +280,7 @@ const Home: React.FC = () => {
                       </div>
                     </div>
 
-                    <p className="text-jps-main/80 mb-auto text-lg md:text-2xl font-light leading-relaxed tracking-tight">
+                    <p className="text-jps-main/80 mb-auto text-base md:text-lg leading-relaxed">
                       "{testimonial.text}"
                     </p>
 
@@ -297,7 +297,7 @@ const Home: React.FC = () => {
                         </div>
                       </div>
                       <div>
-                        <h4 className="font-anton text-xl text-jps-main uppercase tracking-tighter leading-none mb-1">{testimonial.name}</h4>
+                        <h4 className="font-anton text-lg text-jps-main uppercase tracking-wide leading-none mb-1">{testimonial.name}</h4>
                         <p className="text-[10px] text-gray-400 uppercase tracking-[0.2em] font-black">{testimonial.role}</p>
                       </div>
                     </footer>

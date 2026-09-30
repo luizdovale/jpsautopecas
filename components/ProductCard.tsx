@@ -37,7 +37,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
  
       <div className="p-8 flex flex-col flex-grow">
-        <h3 className="text-2xl font-anton uppercase tracking-tight text-jps-main mb-3 line-clamp-2 group-hover:text-jps-light transition-colors leading-tight">
+        <h3 className="title-card text-jps-main mb-3 line-clamp-2 group-hover:text-jps-light transition-colors leading-tight">
           {product.name}
         </h3>
         <p className="text-gray-500 text-sm mb-8 flex-grow line-clamp-4 leading-relaxed font-light">

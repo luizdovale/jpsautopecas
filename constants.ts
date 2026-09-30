@@ -1,7 +1,9 @@
 import { Product, CategoryHighlight, Testimonial } from './types';
 
 export const IMAGENS = {
-  LOGO: "/img/logo.png",
+  LOGO: "/img/logo.png", // original (mantida como backup)
+  LOGO_SVG: "/img/logo.svg",
+  LOGO_SVG_BRANCA: "/img/logo-branca.svg",
   FUNDO_HERO: "/img/hero-fundo.png",
   SOBRE_EQUIPE: "/img/sobre-equipe.png",
   CAT_MECANICO: "/img/cat-mecanico.png",

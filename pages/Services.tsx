@@ -37,7 +37,7 @@ const Services: React.FC = () => {
           <img src={LINHAS_PRODUTOS[0].imageUrl} className="w-full h-full object-cover blur-sm scale-110" alt="" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="font-anton text-5xl md:text-7xl mb-6 uppercase tracking-tight animate-fade-in-up">Peças & Soluções Diesel</h1>
+          <h1 className="title-page mb-6 animate-fade-in-up">Peças & Soluções Diesel</h1>
           <p className="text-white max-w-2xl mx-auto text-lg font-light tracking-wide animate-fade-in-up-delay-1">
             Componentes diesel de alta qualidade com suporte técnico especializado para máxima performance.
           </p>
@@ -50,7 +50,7 @@ const Services: React.FC = () => {
             {LINHAS_PRODUTOS.map((service, index) => (
               <div key={service.id} className={`flex flex-col md:flex-row gap-16 lg:gap-24 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="w-full md:w-1/2 reveal">
-                  <div className="relative group overflow-hidden rounded-[2.5rem] shadow-2xl">
+                  <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                     <div className="absolute inset-0 bg-jps-main/20 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
                     <img
                       src={service.imageUrl}
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
                     </div>
                     <span className="text-jps-gold font-black uppercase tracking-[0.2em] text-[10px]">Especialidade JPS</span>
                   </div>
-                  <h2 className="font-anton text-4xl md:text-5xl text-jps-black mb-8 uppercase leading-tight">{service.title}</h2>
+                  <h2 className="title-section text-jps-black mb-6">{service.title}</h2>
                   <p className="text-gray-500 text-lg leading-relaxed mb-10 font-light">{service.description}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
